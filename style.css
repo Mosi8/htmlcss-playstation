@@ -9,3 +9,37 @@ img {
 .dropdown-menu.ms_width-100 {
     width: 100%;
 }
+
+.ms_freccia_down::after {
+    content: url(img/chevron-down-solid.svg);
+    display: inline-block;
+    margin-left: .5rem;
+    vertical-align: bottom;
+    width: .7rem;
+}
+
+#ms_min-width {
+    min-width: 40vw;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 116px;
+}
+
+main section {
+    position: relative;
+    top: 116px;
+}
+
+#jumbo {
+    background-image: url(img/jumbo-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+}
