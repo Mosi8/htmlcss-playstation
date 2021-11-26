@@ -1,12 +1,8 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
-    width: 100%;
-}
-
-.ms_ls_inlineb {
-    display: inline-block;
-}
-
-.dropdown-menu.ms_width-100 {
     width: 100%;
 }
 
@@ -18,11 +14,6 @@ img {
     width: .7rem;
 }
 
-#ms_min-width {
-    min-width: 40vw;
-    border: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -31,15 +22,169 @@ header {
     height: 116px;
 }
 
+.ms_list_none {
+    list-style-type: none;
+}
+
+#ms_voci_menu {
+    border: none;
+    border-bottom: solid 1px #999;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
 main section {
     position: relative;
     top: 116px;
 }
 
-#jumbo {
+#jumbo,
+#jumbo_take {
     background-image: url(img/jumbo-bg.png);
     background-position: center;
     background-size: cover;
     width: 100%;
     min-height: 600px;
+    position: relative;
+}
+
+#jumbo_take {
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+#jumbo_son,
+#jumbo_take_son {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 20px;
+}
+
+.ms_padding_0_20 {
+    padding: 0 20px;
+}
+
+.ms_mb_15 {
+    margin-bottom: 15px;
+}
+
+.ms_bord_active {
+    border: solid 3px rgb(47, 110, 202);
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.ms_bord_no_active {
+    border: solid 3px #fff;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.ms_bord_radius {
+    border-radius: 15px;
+}
+/* bottoni  */
+.row.ms_mb_15 .tasto button { 
+    color: #fff;
+    padding: 3px 15px;
+    background-color: red;
+    border-radius: 25px;
+    border: solid 2px red;
+    transition: .6s;
+}
+
+.tasto_sezps4 button {
+    color: #fff;
+    padding: 3px 15px;
+    background-color: rgb(59, 99, 222);
+    border-radius: 25px;
+    border: solid 2px rgb(59, 99, 222);
+    transition: .6s;
+}
+
+.row.ms_mb_15 .tasto:hover button {
+    border-color: #000;
+}
+
+.tasto_sezps4:hover button {
+    border-color: #fff;
+}
+
+.tasto {
+    border: solid 2px red;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.tasto_sezps4 {
+    border: solid 2px rgb(59, 99, 222);
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.tasto_sezplus button {
+    color: rgb(59, 99, 222);
+    padding: 7px 15px;
+    background-color: rgb(217, 218, 220);
+    border-radius: 25px;
+    transition: .6s;
+    border: none;
+}
+
+.tasto_sezplus:hover button {
+    box-shadow: 2px 2px 3px #999, -2px -2px 3px #999, 2px -2px 3px #999, -2px 2px 3px #999 ;
+}
+
+.tasto_seznow {
+    border: solid 2px rgb(245, 245, 245);
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.tasto_seznow button {
+    color: #000;
+    padding: 3px 15px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    border: solid 2px rgb(245, 245, 245);
+    transition: .6s;
+}
+
+.tasto_seznow:hover button {
+    border-color: #000;
+}
+/* fine bottoni  */
+.ms_bg_semiscuro {
+    background-color: rgb(31, 31, 31);
+}
+
+.ms_padding_0_12 {
+    padding: 0 12px;
+}
+
+.ms_titolo_ps {
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.ms_titolo_ps span{
+    font-size: 15px;
+    vertical-align: super;
+}
+
+.ms_descrizionesezps {
+    font-size: 20px;
+    color: #777;
+}
+
+.ms_titoli_sezionips4 {
+    font-size: 39px;
+}
+
+.ms_bg_beige {
+    background-color: rgb(190, 188, 187);
+}
+
+.ms_bg_bluscuro {
+    background-color: rgb(23, 28, 57);
 }
