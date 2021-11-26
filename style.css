@@ -34,7 +34,12 @@ header {
     margin: 0;
 }
 
-main section {
+main {
+    position: relative;
+    top: 116px;
+}
+
+footer {
     position: relative;
     top: 116px;
 }
@@ -57,7 +62,7 @@ main section {
 #jumbo_take_son {
     position: absolute;
     bottom: 20px;
-    margin: 0 20px;
+    padding: 0 20px;
 }
 
 .ms_padding_0_20 {
@@ -165,6 +170,7 @@ main section {
 .ms_titolo_ps {
     font-size: 39px;
     font-weight: bold;
+    line-height: 39px;
 }
 
 .ms_titolo_ps span{
@@ -187,4 +193,13 @@ main section {
 
 .ms_bg_bluscuro {
     background-color: rgb(23, 28, 57);
+}
+
+.ms_titolo_social {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.ms_bg_blu {
+    background-color: rgb(25, 66, 150);
 }
