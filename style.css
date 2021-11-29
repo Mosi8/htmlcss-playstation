@@ -6,12 +6,45 @@ img {
     width: 100%;
 }
 
-.ms_freccia_down::after {
-    content: url(img/chevron-down-solid.svg);
-    display: inline-block;
-    margin-left: .5rem;
-    vertical-align: bottom;
+.up_g {
     width: .7rem;
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+.up_b {
+    width: .7rem;
+    vertical-align: baseline;
+    display: none;
+}
+.show .up_g {
+    display: none;
+}
+
+.show .up_b {
+    display: inline-block;
+}
+
+.nav-item.dropdown.position-static .nav-link.show,
+.show.ms_my_g {
+    color: rgb(47, 110, 202);  
+}
+
+.nav-item.dropdown.position-static:hover a {
+    color: rgb(47, 110, 202);
+}
+
+.nav-item.dropdown.position-static:hover .up_b {
+    display: inline-block;
+}
+
+.nav-item.dropdown.position-static:hover .up_g {
+    display: none;
+}
+
+.ms_my_g {
+    transition: 0s;
+    color: rgb(115, 115, 115)
 }
 
 a {
@@ -24,12 +57,12 @@ header {
 
 .ms_list_none {
     list-style-type: none;
+    padding: 0;
 }
 
 #ms_voci_menu {
     border: none;
     border-bottom: solid 1px #999;
-    padding: 0;
     border-radius: 0;
     margin: 0;
 }
@@ -51,22 +84,14 @@ footer {
     background-size: cover;
     width: 100%;
     min-height: 600px;
-    position: relative;
 }
 
 #jumbo_take {
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-#jumbo_son,
-#jumbo_take_son {
-    position: absolute;
-    bottom: 20px;
-    padding: 0 20px;
-}
-
-.ms_padding_0_20 {
-    padding: 0 20px;
+.ms_minh_600{
+    min-height: 600px;
 }
 
 .ms_mb_15 {
@@ -77,12 +102,14 @@ footer {
     border: solid 3px rgb(47, 110, 202);
     border-radius: 15px;
     padding: 2px;
+    transition: 1s;
 }
 
 .ms_bord_no_active {
     border: solid 3px #fff;
     border-radius: 15px;
     padding: 2px;
+    transition: 1s;
 }
 
 .ms_bord_radius {
@@ -92,9 +119,9 @@ footer {
 .row.ms_mb_15 .tasto button { 
     color: #fff;
     padding: 3px 15px;
-    background-color: red;
+    background-color: rgb(189, 72, 37);
     border-radius: 25px;
-    border: solid 2px red;
+    border: solid 2px rgb(189, 72, 37);
     transition: .6s;
 }
 
@@ -116,7 +143,7 @@ footer {
 }
 
 .tasto {
-    border: solid 2px red;
+    border: solid 2px rgb(189, 72, 37);
     display: inline-block;
     border-radius: 25px;
 }
@@ -136,7 +163,8 @@ footer {
     border: none;
 }
 
-.tasto_sezplus:hover button {
+.tasto_sezplus:hover button,
+.col-1.text-center:hover .ms_ombra {
     box-shadow: 2px 2px 3px #999, -2px -2px 3px #999, 2px -2px 3px #999, -2px 2px 3px #999 ;
 }
 
@@ -158,13 +186,28 @@ footer {
 .tasto_seznow:hover button {
     border-color: #000;
 }
+
+.tasto_accedi {
+    border: solid 2px #000;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.tasto_accedi button {
+    color: #fff;
+    padding: 4px 17px;
+    background-color: #000;
+    border-radius: 25px;
+    border: solid 2px #000;
+    transition: .6s;
+}
+
+.tasto_accedi:hover button {
+    border-color: #fff;
+}
 /* fine bottoni  */
 .ms_bg_semiscuro {
     background-color: rgb(31, 31, 31);
-}
-
-.ms_padding_0_12 {
-    padding: 0 12px;
 }
 
 .ms_titolo_ps {
@@ -202,4 +245,42 @@ footer {
 
 .ms_bg_blu {
     background-color: rgb(25, 66, 150);
+}
+
+.ms_bb_thumb {
+    border-bottom: solid 2px rgb(47, 110, 202);
+}
+
+.ms_pointer {
+    cursor: pointer;
+}
+
+.ms_opacity {
+    opacity: .5;
+    transition: .8s;
+}
+
+.col-4.text-center.ms_opacity.ms_pointer:hover {
+    opacity: 1;
+}
+
+.ms_text_blu {
+    color: rgb(47, 110, 202);
+    font-size: 15px;
+}
+
+.ms_fs_36 {
+    font-size: 36px;
+}
+
+.ms_fs_16 {
+    font-size: 16px;
+}
+
+.ms_underline:hover {
+    text-decoration: underline;
+}
+
+.ms_moveup:hover {
+    transform: translateY(-15px);
 }
