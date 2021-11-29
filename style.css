@@ -190,7 +190,7 @@ footer {
 
 .tasto_accedi {
     border: solid 2px rgb(54, 54, 54);
-    display: inline-block;
+    display: inline-grid;
     border-radius: 25px;
 }
 
