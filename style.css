@@ -23,6 +23,7 @@ img {
 
 .nav-link.show .up_b {
     display: inline-block;
+    transform: rotate(180deg);
 }
 
 .nav-item.dropdown.position-static .nav-link.show,
@@ -298,4 +299,14 @@ footer {
     font-size: 6px;
     margin-right: 5px;
     vertical-align: middle;
+}
+
+.col-12.mb-5.ms_pointer img,
+.col-6.mb-4.ms_pointer img{
+    transition: .8s;
+}
+
+.col-12.mb-5.ms_pointer:hover img,
+.col-6.mb-4.ms_pointer:hover img {
+    transform: scale(1.05);
 }
