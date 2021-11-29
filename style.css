@@ -17,11 +17,11 @@ img {
     vertical-align: baseline;
     display: none;
 }
-.show .up_g {
+.nav-link.show .up_g {
     display: none;
 }
 
-.show .up_b {
+.nav-link.show .up_b {
     display: inline-block;
 }
 
@@ -56,8 +56,8 @@ header {
 }
 
 .ms_list_none {
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 }
 
 #ms_voci_menu {
@@ -188,7 +188,7 @@ footer {
 }
 
 .tasto_accedi {
-    border: solid 2px #000;
+    border: solid 2px rgb(54, 54, 54);
     display: inline-block;
     border-radius: 25px;
 }
@@ -196,9 +196,9 @@ footer {
 .tasto_accedi button {
     color: #fff;
     padding: 4px 17px;
-    background-color: #000;
+    background-color: rgb(54, 54, 54);
     border-radius: 25px;
-    border: solid 2px #000;
+    border: solid 2px rgb(54, 54, 54);
     transition: .6s;
 }
 
@@ -232,6 +232,10 @@ footer {
 
 .ms_bg_beige {
     background-color: rgb(190, 188, 187);
+}
+
+.ms_bg_white {
+    background-color: #fff;
 }
 
 .ms_bg_bluscuro {
@@ -277,10 +281,21 @@ footer {
     font-size: 16px;
 }
 
+.ms_fs_25 {
+    font-size: 25px;
+}
+
 .ms_underline:hover {
     text-decoration: underline;
 }
 
 .ms_moveup:hover {
     transform: translateY(-15px);
+}
+
+.fas.fa-square {
+    transform: rotate(45deg);
+    font-size: 6px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
